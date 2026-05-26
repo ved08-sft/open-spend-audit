@@ -37,6 +37,9 @@ yarn-error.log*
 .vercel
 
 # typescript
-*.tsbuildinfo
 next-env.d.ts
 .env.local
+
+# SpendOptima Engineering Textbook
+SpendOptima_Engineering_Textbook.docx
+/scripts/generate_textbook.py

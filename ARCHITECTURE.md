@@ -6,15 +6,29 @@ This document outlines the system architecture, mathematical pipelines, data flo
 
 ## 1. System Architecture Diagram
 
-The system is designed as a modular, lightweight, serverless Next.js App Router application. It operates with a type-safe client layer, a deterministic core logic mathematical engine, and an adaptive server database layer.
+The system is designed as a modular, lightweight, serverless Next.js App Router application. It operates with a type-safe client layer, a deterministic core logic mathematical engine, and an adaptive server database layer, styled in accordance with the Stitch Ethereal Intelligence 3D HUD guidelines.
 
 ```mermaid
 graph TD
     %% Client Layer
     subgraph Client Layer [Client Browser / Next.js Hydration]
-        UI[Interactive Spend UI - page.tsx]
+        UI[3D Interactive HUD UI - page.tsx]
         LS[(Local Storage State)]
+        VSI[Vercel Speed Insights]
+        
         UI <-->|Persists State| LS
+        UI -->|Instruments Latency| VSI
+    end
+
+    %% Styles & Interactive Layer
+    subgraph Design System [Stitch Design System - Ethereal Intelligence]
+        CSS[Theme Tokens - globals.css]
+        Parallax[3D Parallax Drift Engine]
+        Glow[Cursor Magnetic Hover Glows]
+        
+        CSS --> UI
+        Parallax --> UI
+        Glow --> UI
     end
 
     %% API Backend Layer
@@ -82,6 +96,7 @@ sequenceDiagram
 
     Founder->>UI: Inputs team size, workflows, and tools (e.g. Cursor Pro + Copilot)
     UI->>UI: Saves payload in browser localStorage
+    UI->>UI: Runs client-side mousemove 3D Parallax drifts & Magnetic Hover glows
     UI->>UI: Displays instant, on-screen dynamic calculations
     Founder->>UI: Enters business email to finalize report
     UI->>AuditAPI: Submits baseline audit payload
@@ -116,6 +131,13 @@ sequenceDiagram
 
 ### C. Direct REST HTTP API Fetches (Supabase & Resend)
 - **Zero-Dependency Footprint**: Bypassing heavy SDK packages keeps our client bundle size incredibly lean. This keeps our page load and hydration times extremely fast, satisfying our Lighthouse mobile optimization target.
+
+### D. Stitch Ethereal Intelligence 3D HUD Theme
+- **Tacit Founder Trust**: Drawing heavy inspiration from spatial computing and high-end developer interfaces, this theme uses a dark palette (`#050505`), Electric Cyan (`#00f0ff`) telemetry highlights, and Subtle Amber (`#ffb800`) confidence ratings.
+- **Interactive 3D Depth**: Incorporates mouse-responsive parallax drifting layers and localized magnetic cursor hover glows to provide a highly interactive dashboard experience that outperforms standard flat template sites.
+
+### E. Vercel Speed Insights
+- **Real-Time Performance Diagnostics**: Integrated directly into our root layout to report real-time mobile speed statistics, latency, and interaction feedback once deployed to production.
 
 ---
 

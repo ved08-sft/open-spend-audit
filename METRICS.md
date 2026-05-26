@@ -43,6 +43,8 @@ Before launching, we will instrument the application using lightweight tracking 
 - **Event: `lead_submitted`**: Tracks form completion rates and optional field completions (role, company name).
 - **Event: `report_copied`**: Tracks clicks on the copy-link buttons on shareable URLs, measuring viral loop intent.
 - **Event: `consultation_click`**: Tracks clicks on Calendly integration links for audits showing >$500/mo savings.
+- **Event: `hud_3d_interaction`**: Tracks active mouse parallax drifts and magnetic card glow triggers, evaluating how long the premium 3D console visual aesthetics retain founder engagement.
+- **Event: `speed_insights_report`**: Automatically compiles core web vitals, layout shifts (CLS), and mobile load latencies instrumented by the Vercel Speed Insights pipeline.
 
 ---
 

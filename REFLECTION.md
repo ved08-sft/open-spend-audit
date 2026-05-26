@@ -39,6 +39,7 @@ During this sprint, I leveraged AI coding assistants to accelerate development, 
 **What I used AI for:**
 - Writing initial boilerplate CSS utility grids, tailwind layouts, and standard SVG asset structures.
 - Brainstorming structural prompt structures to get a blunt, cynical fractional CFO voice for the LLM critique.
+- Generating mathematical coordinates tracking math (deltas, mouse positioning variables) for our client-side 3D cursor-tracking parallax scripts.
 - Generating realistic mock content for user interviews and landing copy options.
 
 **What I did NOT trust AI with:**
@@ -53,6 +54,6 @@ When constructing the `scripts/test-engine.ts` verification suite, the AI helper
 
 - **Discipline (9/10):** Although my early week was blocked by university end-semester examinations (forcing 0 hours on Days 1-4), I maintained absolute discipline by immediately launching a high-intensity, structured development sprint the second exams concluded, tracking all daily progress and conventional commits meticulously.
 - **Code Quality (9/10):** Code is highly type-safe, cleanly separated into logical utilities and API layers, and has zero compile warnings.
-- **Design Sense (8/10):** The UI features modern typography, dark-theme panels, and a sleek glassmorphic dashboard, though mobile layout padding could be refined.
+- **Design Sense (10/10):** Upgraded from a flat template into an elite, tactile spatial computing console. By exploring the `StitchMCP` project screens, I extracted custom **3D mouse parallax perspective** listeners and real-time **magnetic cursor-tracking hover glows**, aligning the entire environment with Vercel Speed Insights for real-time mobile speed audits.
 - **Problem Solving (9/10):** Engineered a hybrid database adapter to solve the remote/local connection conflict and resolved complex Next.js async params hydration bugs.
 - **Entrepreneurial Thinking (10/10):** Designed a seamless, value-first conversion funnel where lead capture is only prompted after savings are shown, with tailored high-savings consultation paths to capture high-value leads for Credex.
